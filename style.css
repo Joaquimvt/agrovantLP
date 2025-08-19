@@ -1,0 +1,372 @@
+/* Reset e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, #111 70%, #28a745 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    box-shadow: 0 2px 12px #0005;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #28a745;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a:hover,
+.btn-contato:hover {
+    background: #28a745;
+    color: #111;
+}
+
+.btn-contato {
+    background: #28a745;
+    color: #fff;
+    padding: 7px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    box-shadow: 0 4px 24px #0007;
+}
+
+.imagem-hero {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.55) blur(0.5px);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    text-shadow: 0 2px 8px #000;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+/* Benefícios */
+.beneficios {
+    background: #181818;
+    color: #fff;
+    text-align: center;
+    padding: 48px 20px 32px 20px;
+    box-shadow: 0 2px 12px #0003;
+}
+
+.beneficios h2 {
+    font-size: 26px;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.beneficios .icones span {
+    margin: 0 18px;
+    font-size: 18px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.tag {
+    background: #28a745;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 18px;
+    margin-top: 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #0002;
+}
+
+/* Drone */
+.drone {
+    background: #000;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drone-img {
+    width: 100vw;
+    max-width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: 0 4px 24px #0007;
+    background: #000;
+}
+
+/* Blocos */
+.blocos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    background: #222;
+    padding: 40px 20px;
+}
+
+.bloco {
+    background: linear-gradient(135deg, #181818 70%, #28a745 100%);
+    padding: 28px 18px;
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 12px #0004;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bloco:hover {
+    transform: translateY(-7px) scale(1.03);
+    box-shadow: 0 6px 24px #28a74555;
+}
+
+/* Depoimento */
+.depoimento {
+    display: flex;
+    gap: 32px;
+    padding: 48px 20px;
+    background: #181818;
+    color: #fff;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 12px #0003;
+}
+
+.texto {
+    max-width: 400px;
+    font-size: 1.15rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.autor {
+    font-size: 1rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.foto img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #28a745;
+    box-shadow: 0 2px 12px #0005;
+}
+
+.estrelas {
+    color: gold;
+    font-size: 22px;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+/* Formulário */
+.formulario {
+    background: #222;
+    padding: 48px 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 12px #0003;
+}
+
+.formulario h3 {
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.formulario p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.formulario form {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.formulario input {
+    padding: 12px;
+    border: 1px solid #28a745;
+    width: 220px;
+    border-radius: 7px;
+    background: #181818;
+    color: #fff;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+.formulario input:focus {
+    border: 2px solid #28a745;
+    outline: none;
+}
+
+.formulario button {
+    background: #28a745;
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.formulario button:hover {
+    background: #218838;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 18px 10px;
+    }
+    .hero {
+        height: 220px;
+    }
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    .hero-content p {
+        font-size: 15px;
+    }
+    .drone-img {
+        height: 180px;
+    }
+    .blocos {
+        gap: 12px;
+        padding: 20px 8px;
+    }
+    .bloco {
+        font-size: 1rem;
+        padding: 16px 8px;
+    }
+    .depoimento {
+        flex-direction: column;
+        gap: 18px;
+        padding: 24px 8px;
+    }
+    .foto img {
+        width: 80px;
+        height: 80px;
+    }
+    .formulario input {
+        width: 120px;
+        padding: 8px;
+    }
+    .formulario button {
+        padding: 8px 16px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        height: 120px;
+    }
+    .hero-content h1 {
+        font-size: 18px;
+    }
+    .hero-content p {
+        font-size: 11px;
+    }
+    .drone-img {
+        height: 90px;
+    }
+    .beneficios h2 {
+        font-size: 1rem;
+    }
+    .bloco {
+        font-size: 0.9rem;
+        padding: 10px 4px;
+    }
+    .foto img {
+        width: 50px;
+        height: 50px;
+    }
+}
